@@ -1,0 +1,121 @@
+.content {
+  flex: 7;
+  padding: 20px;
+  height: 100%;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 248, 248);
+}
+.contentHead {
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+.placeNames {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.placeNames h1{
+  font-size: 15px;
+}
+.dateContainer p{
+  font-size: 15px;
+
+} 
+.contentBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  height: calc(100%);
+  padding: 30px;
+}
+.ticketsCard {
+  border: solid 1px gray;
+  width: 100%;
+  display: flex;
+  padding: 2%;
+  gap: 20px;
+
+  border-radius: 8px;
+}
+.ticketInfo {
+  display: flex;
+  flex: 7;
+  flex-direction: column;
+  gap: 8px;
+
+  /* border: solid 2px black; */
+}
+.ticketAction {
+  flex: 3;
+  /* border: solid 1px black */
+}
+.ticket {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.ticketDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.number {
+  font-size: 13px;
+  font-weight: 400;
+}
+.ticketAction img {
+  width: 100%;
+  height: 120px;
+ 
+}
+.ticketAction {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticketDetails button{
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00468B;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    margin-top: 20px;
+}
+.mobile{
+  display: flex;
+  flex-direction:column-reverse;
+  background-color: rgb(248, 248, 248);
+}
+.mobile .ticketAction img{
+
+  height: 200px;
+}
+.responsive{
+  height: 20%;
+  gap: 20px;
+    flex-direction: column;
+}
+.responsive h1{
+  font-size: 20px;
+  
+}
+.responsive .placeNames{
+  justify-content: unset;
+}

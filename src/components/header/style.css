@@ -1,0 +1,27 @@
+header {
+  width: 100%;
+  padding: 20px;
+  height: 10vh;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  background: #66b3e1;
+  border-radius: 50%;
+}
+
+.head-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.head-container {
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.drawerLogo{
+  cursor: pointer;
+}

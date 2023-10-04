@@ -1,0 +1,58 @@
+.sidebar{
+    width: 30vw;
+    flex: 3;
+    padding: 20px;
+   
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.datePicker{
+    height: 38px;
+    padding-left: 12px;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: inherit;
+    width: 100%;
+}
+
+.datePicker:active,
+.datePicker:focus{
+    border-color: #00468B !important;
+}
+
+.sliderContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 8px;
+    align-items: center;
+    gap: 21px;
+}
+.sidebarPaper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sideBarHeading{
+    
+    color: gray;
+}
+.tabs{
+    color: white;
+}
