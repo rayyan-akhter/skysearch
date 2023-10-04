@@ -1,7 +1,9 @@
 import React from "react";
 import flight from "../../assets/skySearchLogo.jpg";
+import { useWindowSize } from "../../hooks/useWindowSize";
 
-export function TicketCard({ obj, isMobile }) {
+export function TicketCard({ obj }) {
+  const { isMobile } = useWindowSize();
   return (
     <div className={`ticketsCard ${isMobile ? "mobile" : ""}`}>
       <div className="ticketInfo">
