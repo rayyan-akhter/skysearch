@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./style.css";
-// import DatePicker from "react-date-picker";
-// import "react-date-picker/dist/DatePicker.css";
-// import "react-calendar/dist/Calendar.css";
-import "react-datepicker/dist/react-datepicker.css";
-// import { CgArrowsExchange } from "react-icons/cg";
 import Box from "@mui/material/Box";
-// import { Tab, Tabs } from "@mui/material";
-import Tab from "@mui/material/Tab";
+import React, { useState } from "react";
+import "react-datepicker/dist/react-datepicker.css";
+import "./style.css";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
+import Tab from "@mui/material/Tab";
 import { FlightFilters } from "../flightFilters";
 
 export function debounce(callback, delay) {

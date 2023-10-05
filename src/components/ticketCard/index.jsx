@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import flight from "../../assets/skySearchLogo.jpg";
 import { useWindowSize } from "../../hooks/useWindowSize";
+import Snackbar from '@mui/material/Snackbar';
+import IconButton from '@mui/material/IconButton';
+import { AiOutlineClose } from 'react-icons/ai';
+
 
 export function TicketCard({ obj }) {
   const { isMobile } = useWindowSize();
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const action = (
+    <React.Fragment>
+      
+      <IconButton
+      sx={{color:"white"}}
+        aria-label="close"
+        
+        onClick={handleClose}
+      >
+        <AiOutlineClose size={15} />
+      </IconButton>
+    </React.Fragment>
+  );
   return (
     <div className={`ticketsCard ${isMobile ? "mobile" : ""}`}>
       <div className="ticketInfo">
@@ -25,7 +56,15 @@ export function TicketCard({ obj }) {
             <p>{obj.departure_time}</p>
             <p>{obj.return_arrival_time}</p>
           </div>
-          <button>Book this Flight</button>
+          <button className="bookBtn" onClick={handleClick}>Book This  Flight</button>
+      <Snackbar
+        open={open}
+        autoHideDuration={3000}
+        onClose={handleClose}
+        message="This feature ain't available right now"
+        action={action}
+        
+      />
         </div>
       </div>
       <div className="ticketAction">

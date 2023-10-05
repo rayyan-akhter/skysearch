@@ -12,7 +12,7 @@ export function FlightFilters({ isReturn, filters, setFilters }) {
   const [optionsForOrigin, setOptionsForOrigin] = useState([]);
   const [optionsForDestination, setOptionsForDestination] = useState([]);
 
-  // Define a function to fetch data from the API
+
   async function fetchData(text, setOptions) {
     try {
       const response = await fetch(getApiUrl(text));
