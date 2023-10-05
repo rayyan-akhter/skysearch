@@ -23,7 +23,7 @@
   gap: 5%;
 }
 .placeNames h1{
-  font-size: 15px;
+  font-size: 18px;
 }
 .dateContainer p{
   font-size: 15px;
@@ -54,11 +54,9 @@
   flex-direction: column;
   gap: 8px;
 
-  /* border: solid 2px black; */
 }
 .ticketAction {
   flex: 3;
-  /* border: solid 1px black */
 }
 .ticket {
   display: flex;
