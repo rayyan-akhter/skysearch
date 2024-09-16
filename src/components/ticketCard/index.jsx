@@ -61,7 +61,7 @@ export function TicketCard({ obj }) {
         open={open}
         autoHideDuration={3000}
         onClose={handleClose}
-        message="This feature ain't available right now"
+        message="Likes feature is not Available right now"
         action={action}
         
       />

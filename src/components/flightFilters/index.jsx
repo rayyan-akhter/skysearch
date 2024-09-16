@@ -6,11 +6,12 @@ import Slider from "@mui/material/Slider";
 import Box from "@mui/material/Box";
 import { getApiUrl, debounce, marks } from "../sidebar";
 
-export function FlightFilters({ isReturn, filters, setFilters }) {
+export function  FlightFilters({ isReturn, filters, setFilters }) {
   const [origin, setOrigin] = useState(null);
   const [destinationText, setDestinationText] = useState(null);
   const [optionsForOrigin, setOptionsForOrigin] = useState([]);
   const [optionsForDestination, setOptionsForDestination] = useState([]);
+
 
 
   async function fetchData(text, setOptions) {

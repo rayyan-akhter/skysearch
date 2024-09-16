@@ -19,7 +19,6 @@ export function debounce(callback, delay) {
 export const getApiUrl = (search) =>
   `https://api.geoapify.com/v1/geocode/autocomplete?text=${search}&apiKey=1b48259b810e48ddb151889f9ea58db0&type=locality&limit=5`;
 
-
 export const marks = [
   {
     value: 10000,
@@ -61,13 +60,20 @@ export const Sidebar = ({ filters, setFilters, width }) => {
           </TabList>
         </Box>
         <TabPanel value="1">
-          <FlightFilters isReturn={false} filters={filters} setFilters={setFilters} />
+          <FlightFilters
+            isReturn={false}
+            filters={filters}
+            setFilters={setFilters}
+          />
         </TabPanel>
         <TabPanel value="2">
-          <FlightFilters isReturn={true} filters={filters} setFilters={setFilters} />
+          <FlightFilters
+            isReturn={true}
+            filters={filters}
+            setFilters={setFilters}
+          />
         </TabPanel>
       </TabContext>
     </section>
   );
 };
-
