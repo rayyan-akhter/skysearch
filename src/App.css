@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +12,8 @@ html {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-  width: 0; 
-  background: transparent; 
+  width: 0;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: #ff0000;
@@ -18,6 +21,8 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-family: "Domine", serif;
+
 }
 
 main {
@@ -98,21 +103,19 @@ main {
   text-align: justify;
 }
 
-/* Font Size Utilities */
 .text-sm {
   font-size: 0.875rem;
-} /* Small text */
+} 
 .text-md {
   font-size: 1rem;
-} /* Medium text */
+} 
 .text-lg {
   font-size: 1.25rem;
-} /* Large text */
+} 
 .text-xl {
   font-size: 1.5rem;
-} /* Extra-large text */
+} 
 
-/* Text Color Utilities */
 .text-primary {
   color: #007bff;
 }
@@ -138,7 +141,6 @@ main {
   color: #343a40;
 }
 
-/* Background Color Utilities */
 .bg-primary {
   background-color: #00468b;
 }
@@ -152,7 +154,6 @@ main {
   background-color: #f5f5f5;
 }
 
-/* Flex Container Utilities */
 .d-flex {
   display: flex;
 }
@@ -196,8 +197,6 @@ main {
   align-items: stretch;
 }
 
-
-
 .align-self-end {
   align-self: flex-end;
 }
@@ -210,14 +209,14 @@ main {
 }
 
 .MuiTabPanel-root {
-    padding: 0 !important;
+  padding: 0 !important;
 }
-.MuiDrawer-paperAnchorRight{
+.MuiDrawer-paperAnchorRight {
   width: 400px;
 }
 
-@media (max-width:500px) {
-  .MuiDrawer-paperAnchorRight{
+@media (max-width: 500px) {
+  .MuiDrawer-paperAnchorRight {
     width: 300px;
   }
 }
